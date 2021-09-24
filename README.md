@@ -1,5 +1,5 @@
 # Bi-Partitioning-with-Classification
-Bi-Partition the input image with classification loss
+Bi-Partition the input image to the foreground and the background with classification loss and Mumford-Shah loss.
 
 paper: [Unsupervised Object Segmentation Based on Bi-Partitioning Image Model Integrated with Classification](https://www.mdpi.com/2079-9292/10/18/2296)
 
