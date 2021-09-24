@@ -9,5 +9,5 @@ paper: Unsupervised Object Segmentation Based on Bi-Partitioning Image Model Int
 ### Mumford-Shah
 ![image](https://user-images.githubusercontent.com/32087995/134682144-99e39c72-a10b-473c-adb2-668c6c7ab996.png)
 
-## Segmentation Results
+## Segmentation Results with Pascal VOC dataset
 ![image](https://user-images.githubusercontent.com/32087995/134682217-177edece-ad98-4412-9c75-de9d83465929.png)
