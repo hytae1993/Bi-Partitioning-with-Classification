@@ -80,36 +80,13 @@ class main:
                             # transforms.Normalize([0.485, 0.456, 0.406],[0.229, 0.224, 0.225])
                         ])), 
                         batch_size=args.batchSize, shuffle=True, num_workers=2, drop_last=False, worker_init_fn=seed_worker)
-
-        # labels = args.classes
-        # trainSet = pascalDataset(labels=labels, split='train')
-        # self.train_loader = torch.utils.data.DataLoader(trainSet,
-        #                                 batch_size=args.batchSize, 
-        #                                 shuffle=True,
-        #                                 num_workers=2,
-        #                                 drop_last=True,
-        #                                 collate_fn=trainSet.collate_fn,
-        #                                 pin_memory=True,
-        #                                 )
-        # valSet = pascalDataset(labels=labels, split='val')
-        # self.val_loader = torch.utils.data.DataLoader(valSet,
-        #                                 batch_size=args.batchSize, 
-        #                                 shuffle=True,
-        #                                 num_workers=2,
-        #                                 drop_last=True,
-        #                                 collate_fn=valSet.collate_fn,
-        #                                 pin_memory=True,
-        #                                 )
-
+        
     def modelCall(self):
         if args.model == 'segClass':
             self.model = segClass(args, self.train_loader, self.val_loader)
         
         else:
             raise Exception("the model does not exist")
-
-    
-
 
 if __name__ == '__main__':
     os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"   
